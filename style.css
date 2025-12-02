@@ -1,0 +1,83 @@
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Container to center content */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+/* Header Styling */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Image Styling - Makes it a circle */
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures image isn't squashed */
+    border-radius: 50%;
+    border: 5px solid #2c3e50;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #666;
+    margin-top: 0;
+}
+
+/* Section Headings */
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+}
+
+ul li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+}
+
+/* Quote Styling */
+blockquote {
+    font-style: italic;
+    background: #eef;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+}
