@@ -4,7 +4,7 @@
 
 ## Clarince A. Lomosad - Autobiography
 
-![Clarince Lomosad Photo](clarince-photo.jpg)
+![Clarince Lomosad Photo](clarince_profile.jpg)
 
 **19-year-old BS Computer Application (Internet of Things) student at MSU-IIT**
 
