@@ -24,12 +24,20 @@ body {
     margin-bottom: 30px;
 }
 
-/* Image Styling - Makes it a circle */
+/* NEW: Logo Styling */
+.site-logo {
+    width: 60px;          /* Size of the logo */
+    height: auto;
+    display: block;       /* Forces it to sit on its own line */
+    margin: 0 auto 15px;  /* Centers it and adds space below */
+}
+
+/* Profile Image Styling */
 .profile-img {
     width: 200px;
     height: 200px;
-    object-fit: cover; /* Ensures image isn't squashed */
-    border-radius: 50%;
+    object-fit: cover;
+    border-radius: 50%;   /* Makes it a circle */
     border: 5px solid #2c3e50;
     margin-bottom: 15px;
 }
@@ -55,7 +63,7 @@ h2 {
 
 /* List Styling */
 ul {
-    list-style-type: none; /* Removes bullets */
+    list-style-type: none;
     padding: 0;
 }
 
