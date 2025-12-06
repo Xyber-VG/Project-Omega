@@ -3,10 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clarince A. Lomosad - Autobiography</title>
+    <title>Clarince A. Lomosad - Interactive Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#introduction">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><button id="theme-toggle">🌙 Dark Mode</button></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <header class="profile-header">
@@ -19,7 +28,7 @@
 
         <section id="introduction">
             <h2>Introduction</h2>
-            <p>Welcome to my personal website. I am a dedicated student currently pursuing my degree in the Internet of Things.</p>
+            <p class="greeting-text">👋 <span id="dynamic-greeting">Welcome</span>! I am a dedicated student currently pursuing my degree in the Internet of Things.</p>
         </section>
 
         <section id="early-life">
@@ -39,12 +48,18 @@
 
         <section id="hobbies">
             <h2>Hobbies and Interests</h2>
-            <p>I spend my free time playing games, listening to music, reading, and enjoying well-made visual novels.</p>
+            <div class="hobby-grid">
+                <span>🎮 Gaming</span>
+                <span>🎵 Music</span>
+                <span>📚 Reading</span>
+                <span>📖 Visual Novels</span>
+            </div>
         </section>
 
         <section id="goals">
             <h2>Goals in Life</h2>
             <p>My goals are simple: finish my studies, find a stable job, and support my family.</p>
+            <button onclick="showAlert()" class="contact-btn">Contact Me</button>
         </section>
 
         <section id="quote">
@@ -58,6 +73,8 @@
             <p>&copy; 2025 Clarince A. Lomosad | Project-Omega</p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
