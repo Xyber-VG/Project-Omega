@@ -74,7 +74,47 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        // 1. Wait for the page to load
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // --- Dark Mode Logic ---
+            const themeButton = document.getElementById("theme-toggle");
+            const body = document.body;
+
+            if (themeButton) {
+                themeButton.addEventListener("click", function() {
+                    body.classList.toggle("dark-mode");
+                    
+                    // Update button text
+                    if (body.classList.contains("dark-mode")) {
+                        themeButton.innerText = "☀️ Light Mode";
+                    } else {
+                        themeButton.innerText = "🌙 Dark Mode";
+                    }
+                });
+            }
+
+            // --- Time Greeting Logic ---
+            const hour = new Date().getHours();
+            const greetingElement = document.getElementById("dynamic-greeting");
+            
+            if (greetingElement) {
+                if (hour < 12) {
+                    greetingElement.innerText = "Good Morning";
+                } else if (hour < 18) {
+                    greetingElement.innerText = "Good Afternoon";
+                } else {
+                    greetingElement.innerText = "Good Evening";
+                }
+            }
+        });
+
+        // --- Contact Alert Logic ---
+        function showAlert() {
+            alert("Thank you for visiting my profile! You can reach me at MSU-IIT.");
+        }
+    </script>
 
 </body>
 </html>
